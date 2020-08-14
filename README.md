@@ -12,6 +12,7 @@ Essa foi uma tarefa passada pela Rocketseat para rever alguns conceitos sobre as
 Para iniciar o projeto, você deve:
 * Ter o Node instalado, de preferência na versão LTS, e Yarn instalado também (opcional);
 * Fazer o clone desse repositório e rodar o comando `yarn` ou `npm install` para instalar as dependencias;
+* O comando `yarn dev` ou `npm run dev`, deve fazer o projeto iniciar;
 
 ## Descrição
 
