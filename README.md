@@ -25,3 +25,101 @@ const repository = repositories.findIndex(project=>project.id ===id)
 ```
 
 Da forma errada, eu estava trocando o id dos projetos, e da forma certa, eu estava verificando de o id passado na url tinha na minha lista.
+
+# API blueprint
+
+## Repositórios [/repositories]
+
+### Ver todos os projetos [GET]
+
+* Response 200 (application/json)
+
+      * Body
+            
+             [
+              {
+                "url":"https://github.com/Matan18/conceitos-nodejs",
+                "title":"Conceitos-NodeJs",
+                "title":["Node", "Express", "Typescript"],
+                "likes":0,
+                "id":"..." // universal unique id
+              }
+             ]
+
+### Adicionar um projeto [POST]
+
+* Request (application/json)
+  
+      * Body
+      
+            {
+              "url":"https://github.com/Matan18/conceitos-nodejs",
+              "title":"Conceitos-NodeJs",
+              "title":["Node", "Express", "Typescript"]
+            }
+  
+* Response 200 (application/json)
+  
+      * Body
+            
+            {
+              "url":"https://github.com/Matan18/conceitos-nodejs",
+              "title":"Conceitos-NodeJs",
+              "title":["Node", "Express", "Typescript"],
+              "likes":0,
+              "id":"..." // universal unique id
+            }
+
+### Resgatar um projeto [/{id}] [GET]
+
+* Response 200 (application/json)
+ 
+      * Body 
+            
+            {
+              "url":"https://github.com/Matan18/conceitos-nodejs",
+              "title":"Conceitos-NodeJs",
+              "title":["Node", "Express", "Typescript"],
+              "likes":0,
+              "id":"..." // universal unique id
+            }
+
+### Atualizar um projeto [/{id}] [PUT]
+
+* Request 200 (application/json)
+  
+      * Body
+      
+            {
+              "url":"https://github.com/Matan18/conceitos-nodejs",
+              "title":"Conceitos-NodeJs",
+              "title":["Node", "Express", "Typescript"]
+            }
+
+* Response 200 (application/json)
+  
+      * Body
+            
+            {
+              "url":"https://github.com/Matan18/conceitos-nodejs",
+              "title":"Conceitos-NodeJs",
+              "title":["Node", "Express", "Typescript"],
+              "likes":0,
+              "id":"..." // universal unique id
+            }
+
+### Deletar um projeto [/{id}] [DELETE]
+
+* Response  204 (No Content)
+
+## Likes [/repositories/{id}/like]
+
+### Adicionar um Like [POST]
+
+* Response 
+
+      * Body 200 (application/json)
+      
+            {
+              likes: 1
+            }
