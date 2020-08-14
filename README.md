@@ -1,7 +1,16 @@
 # conceitos-nodejs
-## First challenge in GoStack from rocketseat
+## Primeiro desafio no GoStack da Rocketseat
 
 Essa foi uma tarefa passada pela Rocketseat para rever alguns conceitos sobre as rotas e funcionalidades de um backend, o projeto estava com as rotas prontas, mas cada resposta http tinha que ser escrita pelos alunos.
+
+## Techs
+
+* NodeJS;
+* Express
+
+## Iniciar
+
+* Para iniciar o projeto, basta fazer o clone desse repositório e rodar o comando `yarn` ou `npm install` para instalar as dependencias;
 
 O projeto seria uma API pra portifolio, onde você registra os projetos com titulo, tecnologias e link do github, ainda sem usar um banco de dados, só com um vetor de objetos.
 
