@@ -12,6 +12,8 @@ Essa foi uma tarefa passada pela Rocketseat para rever alguns conceitos sobre as
 
 * Para iniciar o projeto, basta fazer o clone desse repositório e rodar o comando `yarn` ou `npm install` para instalar as dependencias;
 
+## Descrição
+
 O projeto seria uma API pra portifolio, onde você registra os projetos com titulo, tecnologias e link do github, ainda sem usar um banco de dados, só com um vetor de objetos.
 
 ```javascript
